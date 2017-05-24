@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>致青春</title>
+    <link rel="stylesheet" href="css/swiper-3.4.1.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper-3.4.1.jquery.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style:none;
+        }
+        html,body,.swiper-container{
+            width: 100%;
+            height: 100%;
+        }
+         .swiper-container{
+             width: 320px;
+             height: 500px;
+             /*background: pink;*/
+         }
+        .s1 img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .s1 img:nth-child(1){
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .s1 img:nth-child(2){
+            width: 40%;
+            height: 40%;
+            margin-left:-30px;
+            margin-top:-150px;
+        }
+        .s1 img:nth-child(3){
+            width: 20%;
+            height: 8%;
+            margin-left:-105px;
+            margin-top:45px;
+        }
+        .s1 img:nth-child(4){
+            width: 35%;
+            height: 10%;
+            margin-left:25px;
+            margin-top:-175px;
+        }
+        .s1 img:nth-child(5){
+            width: 3%;
+            height: 15%;
+            margin-left:-60px;
+            margin-top:-83px;
+        }
+        .s1 img:nth-child(6){
+            width: 6%;
+            height:18%;
+            margin-left:-42px;
+            margin-top:-98px;
+        }
+        .s1 img:nth-child(7){
+            width: 35%;
+            height: 4%;
+            margin-left:-110px;
+            margin-top:80px;
+        }
+        .s1 img:nth-child(8){
+            width: 35%;
+            height: 4%;
+            margin-left:10px;
+            margin-top:80px;
+        }
+        .s1 span{
+            position: absolute;
+            bottom: 120px;
+            left: 85px;
+            color: #2b2b2b;
+            font-weight: bold;
+            font-family:"微软雅黑";
+        }
+        .s2 img{
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+        .s2 img:nth-child(1){
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .s2 img:nth-child(2){
+            width:100%;
+            height: 40%;
+            top: 0;
+        }
+        .s2 img:nth-child(3){
+            width:80%;
+            height: 35%;
+            top: 210px;
+            left: 35px;
+        }
+        .s2 span{
+            width:72%;
+            height: 35%;
+            position: absolute;
+            display: block;
+            top: 255px;
+            left: 50px;
+            font-size: 12px;
+            color: #2b2b2b;
+            font-weight: bold;
+        }
+        .s2 p{
+            position: absolute;
+            width:80%;
+            height: 35%;
+            top: 360px;
+            left: 230px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .s3 img{
+             position: absolute;
+             top: 50%;
+             left: 0;
+         }
+        .s3 img:nth-child(1){
+             width: 100%;
+             height: 100%;
+             top: 0;
+             left: 0;
+         }
+        .s3 img:nth-child(2){
+            width:100%;
+            height: 30%;
+            top: 0;
+        }
+        .s3 img:nth-child(3){
+            width:10%;
+            height: 10%;
+            margin-top: -90px;
+            margin-left: 30px;
+        }
+        .s3 img:nth-child(4){
+            width:10%;
+            height: 10%;
+            margin-top: -20px;
+            margin-left: 260px;
+        }
+        .s3 img:nth-child(5){
+            width:50%;
+            height: 25%;
+            margin-top: 30px;
+            margin-left: 0px;
+        }
+        .s3 img:nth-child(6){
+            width:50%;
+            height: 22%;
+            margin-top: 30px;
+            margin-left: 160px;
+        }
+        .s3 img:nth-child(7){
+            width:40%;
+            height: 20%;
+            margin-top: 42px;
+            margin-left: 14px;
+        }
+        .s3 img:nth-child(8){
+            width:39%;
+            height: 17%;
+            margin-top: 40px;
+            margin-left: 173px;
+        }
+        .s3 span{
+            width:72%;
+            height: 35%;
+            position: absolute;
+            display: block;
+            top: 180px;
+            left: 50px;
+            font-size: 12px;
+            color: #2b2b2b;
+            font-weight: bold;
+        }
+        .s4 img:nth-child(1){
+            border-radius: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            margin-top: 0;
+
+        }
+        .s4 img{
+            /*position: absolute;*/
+            width: 48%;
+            height: 30%;
+            /*top: 0px;*/
+            /*left: 0px;*/
+            border-radius: 10px;
+            text-align: center;
+        }
+        .s4 img:last-child{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 10%;
+            height: 5%;
+            border-radius: 0px;
+
+        }
+        .s4 p{
+            height: 80px;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 30px;
+        }
+        .s5 img:nth-child(1){
+            border-radius: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin-top: 0;
+        }
+        .s5 p{
+            text-align: center;
+            font-weight: bold;
+            line-height:28px;
+        }
+        .swiper-slide img:last-child{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -15px;
+            margin-top: 200px;
+            animation: arr 1s infinite ease-in-out;
+        }
+
+        @keyframes arr{
+            0%{transform: translateY(20px);opacity:0}
+            50%{transform: translateY(15px);opacity:1}
+            100%{transform: translateY(10px);opacity:0}
+        }
+
+    </style>
+    <script>
+        $(function () {
+            var mySwiper = new Swiper ('.swiper-container', {
+                // 如果需要分页器
+                pagination: '.swiper-pagination',
+                loop:true,
+
+                direction: 'vertical',//向上下翻页
+                mousewheelControl : true,//鼠标滚动,图片翻页
+                onInit: function(swiper){
+                    swiperAnimateCache(swiper);//隐藏动画元素
+                    swiperAnimate(swiper);//初始化完成开始动画
+                },
+                onSlideChangeEnd: function(swiper){
+                    swiperAnimate(swiper);//每个slide切换结束时也运行当前slide动画
+                }
+            });
+
+        })
+    </script>
+
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide s1">
+            <img src="images/bg.png" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0s">
+            <img src="images/tongxue.png" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="2s" swiper-animate-delay="0s">
+            <img src="images/che.png" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="2s">
+            <img src="images/qingchun.png" class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="images/hello.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="3s">
+            <img src="images/wellcome.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="3s">
+            <img src="images/tu01.jpg" class="ani" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="2s" swiper-animate-delay="4s">
+            <img src="images/tu02.jpg" class="ani" swiper-animate-effect="rotateInUpRight" swiper-animate-duration="2s" swiper-animate-delay="4s">
+            <span class="ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="1s" swiper-animate-delay="5s">某大学90级传媒系一班</span>
+            <img src="images/arr.png">
+        </div>
+        <div class="swiper-slide s2">
+            <img src="images/bg.png" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/pic01.png" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/shujia.png" class="ani" swiper-animate-effect="wobble" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <span class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">&nbsp; &nbsp; 10年前，我们带着幼稚，满怀着憧憬，为了满足
+对知识的渴求，从各个角落走到一起，在我们那
+不能忘记的母校——立人中学，留下了我们不能
+忘却的人生足迹。我们获得了知识，培育了友谊
+，从那我们又信步走向四面八方。今天，10年的
+分别，10年的牵念，使我们再次相约聚会。
+            </span>
+            <p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1s">老班长</p>
+            <img src="images/arr.png">
+        </div>
+        <div class="swiper-slide s3">
+            <img src="images/bg.png" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/pic02.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s" swiper-animate-delay="1s">
+            <img src="images/left.png" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/right.png" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/pic_bg02.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/pic_bg03.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/pic03.png" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <img src="images/pic04.png" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <span class="ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="2s" swiper-animate-delay="1">&nbsp;  时光荏冉，岁月如歌，回首同学生涯，我们不仅收获了
+学业，更收获了友谊！回顾那青春燃烧的岁月，是那么
+的美好、那么的亲切！同桌的笑声记忆犹新，老师的教
+诲至今难忘！回首风风雨雨，有太多的感言，
+有太多的追忆。</span>
+            <img src="images/arr.png">
+        </div>
+        <div class="swiper-slide s4">
+            <img src="images/bg.png" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="0">
+            <p class="ani" swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="0">往事的记忆</p>
+            <img src="images/p4.png" class="ani" swiper-animate-effect="flipInX" swiper-animate-duration="2s" swiper-animate-delay="1s">
+            <img src="images/p2.png" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="2s" swiper-animate-delay="1s">
+            <img src="images/p1.png" class="ani" swiper-animate-effect="flipInX" swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="images/p3.png" class="ani" swiper-animate-effect="flipInY" swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <img src="images/arr.png">
+        </div>
+        <div class="swiper-slide s5">
+            <img src="images/bg.png" class="ani" swiper-animate-effect="pulse" swiper-animate-duration="2s" swiper-animate-delay="0s">
+            <img src="images/pic04.png" class="ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="0s">
+            <img src="images/p1.png" class="ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="2s" swiper-animate-delay="2s">
+            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="3s" swiper-animate-delay="3s">请回来吧,亲爱的同学!</p>
+            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="4s" swiper-animate-delay="4s">回来一起重温属于我们的时刻!</p>
+            <img src="images/arr.png">
+        </div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+</div>
+</body>
+</html>
